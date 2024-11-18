@@ -15,7 +15,7 @@ namespace AndmebaasAlex
 {
     public partial class StartForm : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=HP-CZC2349HT4;Initial Catalog=Andmebaas;Integrated Security=True;Trust Server Certificate=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=andmebaas;Integrated Security=True");
         SqlCommand cmd;
         SqlDataAdapter adapter;
         int ID;

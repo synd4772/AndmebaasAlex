@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AndmebaasDataSet.Designer.cs">
+    <Compile Include="andmebaasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AndmebaasDataSet.xsd</DependentUpon>
+      <DependentUpon>andmebaasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
@@ -72,16 +72,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="AndmebaasDataSet.xsc">
-      <DependentUpon>AndmebaasDataSet.xsd</DependentUpon>
+    <None Include="andmebaasDataSet.xsc">
+      <DependentUpon>andmebaasDataSet.xsd</DependentUpon>
     </None>
-    <None Include="AndmebaasDataSet.xsd">
+    <None Include="andmebaasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AndmebaasDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>andmebaasDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="AndmebaasDataSet.xss">
-      <DependentUpon>AndmebaasDataSet.xsd</DependentUpon>
+    <None Include="andmebaasDataSet.xss">
+      <DependentUpon>andmebaasDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

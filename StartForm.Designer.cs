@@ -36,13 +36,7 @@
             this.Hind_txt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nimetusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kogusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hindDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toodeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.andmebaasDataSet = new AndmebaasAlex.AndmebaasDataSet();
-            this.toodeTableAdapter = new AndmebaasAlex.AndmebaasDataSetTableAdapters.ToodeTableAdapter();
             this.LisaBtn = new System.Windows.Forms.Button();
             this.KustutaBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -50,7 +44,6 @@
             this.PildiOtsing = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toodeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.andmebaasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,56 +100,12 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nimetusDataGridViewTextBoxColumn,
-            this.kogusDataGridViewTextBoxColumn,
-            this.hindDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.toodeBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(46, 236);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(551, 150);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nimetusDataGridViewTextBoxColumn
-            // 
-            this.nimetusDataGridViewTextBoxColumn.DataPropertyName = "nimetus";
-            this.nimetusDataGridViewTextBoxColumn.HeaderText = "nimetus";
-            this.nimetusDataGridViewTextBoxColumn.Name = "nimetusDataGridViewTextBoxColumn";
-            // 
-            // kogusDataGridViewTextBoxColumn
-            // 
-            this.kogusDataGridViewTextBoxColumn.DataPropertyName = "kogus";
-            this.kogusDataGridViewTextBoxColumn.HeaderText = "kogus";
-            this.kogusDataGridViewTextBoxColumn.Name = "kogusDataGridViewTextBoxColumn";
-            // 
-            // hindDataGridViewTextBoxColumn
-            // 
-            this.hindDataGridViewTextBoxColumn.DataPropertyName = "hind";
-            this.hindDataGridViewTextBoxColumn.HeaderText = "hind";
-            this.hindDataGridViewTextBoxColumn.Name = "hindDataGridViewTextBoxColumn";
-            // 
-            // toodeBindingSource
-            // 
-            this.toodeBindingSource.DataMember = "Toode";
-            this.toodeBindingSource.DataSource = this.andmebaasDataSet;
-            // 
-            // andmebaasDataSet
-            // 
-            this.andmebaasDataSet.DataSetName = "AndmebaasDataSet";
-            this.andmebaasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // toodeTableAdapter
-            // 
-            this.toodeTableAdapter.ClearBeforeFill = true;
             // 
             // LisaBtn
             // 
@@ -228,7 +177,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toodeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.andmebaasDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -244,13 +192,7 @@
         private System.Windows.Forms.TextBox Hind_txt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private AndmebaasDataSet andmebaasDataSet;
         private System.Windows.Forms.BindingSource toodeBindingSource;
-        private AndmebaasDataSetTableAdapters.ToodeTableAdapter toodeTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nimetusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kogusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hindDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button LisaBtn;
         private System.Windows.Forms.Button KustutaBtn;
         private System.Windows.Forms.Button button2;

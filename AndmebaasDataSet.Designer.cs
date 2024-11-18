@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace AndmebaasAlex {
+namespace AndmebaasWin {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace AndmebaasAlex {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("AndmebaasDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("andmebaasDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class AndmebaasDataSet : global::System.Data.DataSet {
+    public partial class andmebaasDataSet : global::System.Data.DataSet {
         
-        private ToodeDataTable tableToode;
+        private toodedDataTable tabletooded;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public AndmebaasDataSet() {
+        public andmebaasDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace AndmebaasAlex {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected AndmebaasDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected andmebaasDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace AndmebaasAlex {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Toode"] != null)) {
-                    base.Tables.Add(new ToodeDataTable(ds.Tables["Toode"]));
+                if ((ds.Tables["tooded"] != null)) {
+                    base.Tables.Add(new toodedDataTable(ds.Tables["tooded"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace AndmebaasAlex {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ToodeDataTable Toode {
+        public toodedDataTable tooded {
             get {
-                return this.tableToode;
+                return this.tabletooded;
             }
         }
         
@@ -127,7 +127,7 @@ namespace AndmebaasAlex {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            AndmebaasDataSet cln = ((AndmebaasDataSet)(base.Clone()));
+            andmebaasDataSet cln = ((andmebaasDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace AndmebaasAlex {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Toode"] != null)) {
-                    base.Tables.Add(new ToodeDataTable(ds.Tables["Toode"]));
+                if ((ds.Tables["tooded"] != null)) {
+                    base.Tables.Add(new toodedDataTable(ds.Tables["tooded"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace AndmebaasAlex {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableToode = ((ToodeDataTable)(base.Tables["Toode"]));
+            this.tabletooded = ((toodedDataTable)(base.Tables["tooded"]));
             if ((initTable == true)) {
-                if ((this.tableToode != null)) {
-                    this.tableToode.InitVars();
+                if ((this.tabletooded != null)) {
+                    this.tabletooded.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace AndmebaasAlex {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "AndmebaasDataSet";
+            this.DataSetName = "andmebaasDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/AndmebaasDataSet.xsd";
+            this.Namespace = "http://tempuri.org/andmebaasDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableToode = new ToodeDataTable();
-            base.Tables.Add(this.tableToode);
+            this.tabletooded = new toodedDataTable();
+            base.Tables.Add(this.tabletooded);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeToode() {
+        private bool ShouldSerializetooded() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace AndmebaasAlex {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            AndmebaasDataSet ds = new AndmebaasDataSet();
+            andmebaasDataSet ds = new andmebaasDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,14 +270,14 @@ namespace AndmebaasAlex {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void ToodeRowChangeEventHandler(object sender, ToodeRowChangeEvent e);
+        public delegate void toodedRowChangeEventHandler(object sender, toodedRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ToodeDataTable : global::System.Data.TypedTableBase<ToodeRow> {
+        public partial class toodedDataTable : global::System.Data.TypedTableBase<toodedRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -289,8 +289,8 @@ namespace AndmebaasAlex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ToodeDataTable() {
-                this.TableName = "Toode";
+            public toodedDataTable() {
+                this.TableName = "tooded";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +298,7 @@ namespace AndmebaasAlex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal ToodeDataTable(global::System.Data.DataTable table) {
+            internal toodedDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,7 +315,7 @@ namespace AndmebaasAlex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected ToodeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected toodedDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -363,55 +363,55 @@ namespace AndmebaasAlex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ToodeRow this[int index] {
+            public toodedRow this[int index] {
                 get {
-                    return ((ToodeRow)(this.Rows[index]));
+                    return ((toodedRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ToodeRowChangeEventHandler ToodeRowChanging;
+            public event toodedRowChangeEventHandler toodedRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ToodeRowChangeEventHandler ToodeRowChanged;
+            public event toodedRowChangeEventHandler toodedRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ToodeRowChangeEventHandler ToodeRowDeleting;
+            public event toodedRowChangeEventHandler toodedRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event ToodeRowChangeEventHandler ToodeRowDeleted;
+            public event toodedRowChangeEventHandler toodedRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddToodeRow(ToodeRow row) {
+            public void AddtoodedRow(toodedRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ToodeRow AddToodeRow(string nimetus, int kogus, double hind) {
-                ToodeRow rowToodeRow = ((ToodeRow)(this.NewRow()));
+            public toodedRow AddtoodedRow(string nimetus, int kogus, decimal hind) {
+                toodedRow rowtoodedRow = ((toodedRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         nimetus,
                         kogus,
                         hind};
-                rowToodeRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowToodeRow);
-                return rowToodeRow;
+                rowtoodedRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtoodedRow);
+                return rowtoodedRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ToodeRow FindByid(int id) {
-                return ((ToodeRow)(this.Rows.Find(new object[] {
+            public toodedRow FindByid(int id) {
+                return ((toodedRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                ToodeDataTable cln = ((ToodeDataTable)(base.Clone()));
+                toodedDataTable cln = ((toodedDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -419,7 +419,7 @@ namespace AndmebaasAlex {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new ToodeDataTable();
+                return new toodedDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -440,7 +440,7 @@ namespace AndmebaasAlex {
                 base.Columns.Add(this.columnnimetus);
                 this.columnkogus = new global::System.Data.DataColumn("kogus", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnkogus);
-                this.columnhind = new global::System.Data.DataColumn("hind", typeof(double), null, global::System.Data.MappingType.Element);
+                this.columnhind = new global::System.Data.DataColumn("hind", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnhind);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
@@ -455,28 +455,28 @@ namespace AndmebaasAlex {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ToodeRow NewToodeRow() {
-                return ((ToodeRow)(this.NewRow()));
+            public toodedRow NewtoodedRow() {
+                return ((toodedRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ToodeRow(builder);
+                return new toodedRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(ToodeRow);
+                return typeof(toodedRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.ToodeRowChanged != null)) {
-                    this.ToodeRowChanged(this, new ToodeRowChangeEvent(((ToodeRow)(e.Row)), e.Action));
+                if ((this.toodedRowChanged != null)) {
+                    this.toodedRowChanged(this, new toodedRowChangeEvent(((toodedRow)(e.Row)), e.Action));
                 }
             }
             
@@ -484,8 +484,8 @@ namespace AndmebaasAlex {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.ToodeRowChanging != null)) {
-                    this.ToodeRowChanging(this, new ToodeRowChangeEvent(((ToodeRow)(e.Row)), e.Action));
+                if ((this.toodedRowChanging != null)) {
+                    this.toodedRowChanging(this, new toodedRowChangeEvent(((toodedRow)(e.Row)), e.Action));
                 }
             }
             
@@ -493,8 +493,8 @@ namespace AndmebaasAlex {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.ToodeRowDeleted != null)) {
-                    this.ToodeRowDeleted(this, new ToodeRowChangeEvent(((ToodeRow)(e.Row)), e.Action));
+                if ((this.toodedRowDeleted != null)) {
+                    this.toodedRowDeleted(this, new toodedRowChangeEvent(((toodedRow)(e.Row)), e.Action));
                 }
             }
             
@@ -502,14 +502,14 @@ namespace AndmebaasAlex {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.ToodeRowDeleting != null)) {
-                    this.ToodeRowDeleting(this, new ToodeRowChangeEvent(((ToodeRow)(e.Row)), e.Action));
+                if ((this.toodedRowDeleting != null)) {
+                    this.toodedRowDeleting(this, new toodedRowChangeEvent(((toodedRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveToodeRow(ToodeRow row) {
+            public void RemovetoodedRow(toodedRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -518,7 +518,7 @@ namespace AndmebaasAlex {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                AndmebaasDataSet ds = new AndmebaasDataSet();
+                andmebaasDataSet ds = new andmebaasDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -536,7 +536,7 @@ namespace AndmebaasAlex {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ToodeDataTable";
+                attribute2.FixedValue = "toodedDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -580,25 +580,25 @@ namespace AndmebaasAlex {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class ToodeRow : global::System.Data.DataRow {
+        public partial class toodedRow : global::System.Data.DataRow {
             
-            private ToodeDataTable tableToode;
+            private toodedDataTable tabletooded;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal ToodeRow(global::System.Data.DataRowBuilder rb) : 
+            internal toodedRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableToode = ((ToodeDataTable)(this.Table));
+                this.tabletooded = ((toodedDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tableToode.idColumn]));
+                    return ((int)(this[this.tabletooded.idColumn]));
                 }
                 set {
-                    this[this.tableToode.idColumn] = value;
+                    this[this.tabletooded.idColumn] = value;
                 }
             }
             
@@ -607,14 +607,14 @@ namespace AndmebaasAlex {
             public string nimetus {
                 get {
                     try {
-                        return ((string)(this[this.tableToode.nimetusColumn]));
+                        return ((string)(this[this.tabletooded.nimetusColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'nimetus\' in table \'Toode\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'nimetus\' in table \'tooded\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableToode.nimetusColumn] = value;
+                    this[this.tabletooded.nimetusColumn] = value;
                 }
             }
             
@@ -623,67 +623,67 @@ namespace AndmebaasAlex {
             public int kogus {
                 get {
                     try {
-                        return ((int)(this[this.tableToode.kogusColumn]));
+                        return ((int)(this[this.tabletooded.kogusColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'kogus\' in table \'Toode\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'kogus\' in table \'tooded\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableToode.kogusColumn] = value;
+                    this[this.tabletooded.kogusColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double hind {
+            public decimal hind {
                 get {
                     try {
-                        return ((double)(this[this.tableToode.hindColumn]));
+                        return ((decimal)(this[this.tabletooded.hindColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'hind\' in table \'Toode\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'hind\' in table \'tooded\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableToode.hindColumn] = value;
+                    this[this.tabletooded.hindColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsnimetusNull() {
-                return this.IsNull(this.tableToode.nimetusColumn);
+                return this.IsNull(this.tabletooded.nimetusColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetnimetusNull() {
-                this[this.tableToode.nimetusColumn] = global::System.Convert.DBNull;
+                this[this.tabletooded.nimetusColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IskogusNull() {
-                return this.IsNull(this.tableToode.kogusColumn);
+                return this.IsNull(this.tabletooded.kogusColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetkogusNull() {
-                this[this.tableToode.kogusColumn] = global::System.Convert.DBNull;
+                this[this.tabletooded.kogusColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IshindNull() {
-                return this.IsNull(this.tableToode.hindColumn);
+                return this.IsNull(this.tabletooded.hindColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SethindNull() {
-                this[this.tableToode.hindColumn] = global::System.Convert.DBNull;
+                this[this.tabletooded.hindColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -691,22 +691,22 @@ namespace AndmebaasAlex {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class ToodeRowChangeEvent : global::System.EventArgs {
+        public class toodedRowChangeEvent : global::System.EventArgs {
             
-            private ToodeRow eventRow;
+            private toodedRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ToodeRowChangeEvent(ToodeRow row, global::System.Data.DataRowAction action) {
+            public toodedRowChangeEvent(toodedRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ToodeRow Row {
+            public toodedRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -722,7 +722,7 @@ namespace AndmebaasAlex {
         }
     }
 }
-namespace AndmebaasAlex.AndmebaasDataSetTableAdapters {
+namespace AndmebaasWin.andmebaasDataSetTableAdapters {
     
     
     /// <summary>
@@ -734,7 +734,7 @@ namespace AndmebaasAlex.AndmebaasDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class ToodeTableAdapter : global::System.ComponentModel.Component {
+    public partial class toodedTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -748,7 +748,7 @@ namespace AndmebaasAlex.AndmebaasDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public ToodeTableAdapter() {
+        public toodedTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -845,7 +845,7 @@ namespace AndmebaasAlex.AndmebaasDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Toode";
+            tableMapping.DataSetTable = "tooded";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("nimetus", "nimetus");
             tableMapping.ColumnMappings.Add("kogus", "kogus");
@@ -853,7 +853,7 @@ namespace AndmebaasAlex.AndmebaasDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Toode] WHERE (([id] = @Original_id) AND ((@IsNull_nimetus = 1 AND [nimetus] IS NULL) OR ([nimetus] = @Original_nimetus)) AND ((@IsNull_kogus = 1 AND [kogus] IS NULL) OR ([kogus] = @Original_kogus)) AND ((@IsNull_hind = 1 AND [hind] IS NULL) OR ([hind] = @Original_hind)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tooded] WHERE (([id] = @Original_id) AND ((@IsNull_nimetus = 1 AND [nimetus] IS NULL) OR ([nimetus] = @Original_nimetus)) AND ((@IsNull_kogus = 1 AND [kogus] IS NULL) OR ([kogus] = @Original_kogus)) AND ((@IsNull_hind = 1 AND [hind] IS NULL) OR ([hind] = @Original_hind)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nimetus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nimetus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -861,31 +861,31 @@ namespace AndmebaasAlex.AndmebaasDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_kogus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kogus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kogus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kogus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_hind", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hind", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_hind", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hind", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_hind", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "hind", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Toode] ([nimetus], [kogus], [hind]) VALUES (@nimetus, @kogus, " +
-                "@hind);\r\nSELECT id, nimetus, kogus, hind FROM Toode WHERE (id = SCOPE_IDENTITY()" +
-                ")";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tooded] ([nimetus], [kogus], [hind]) VALUES (@nimetus, @kogus," +
+                " @hind);\r\nSELECT id, nimetus, kogus, hind FROM tooded WHERE (id = SCOPE_IDENTITY" +
+                "())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nimetus", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nimetus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kogus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kogus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@hind", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hind", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@hind", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "hind", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Toode] SET [nimetus] = @nimetus, [kogus] = @kogus, [hind] = @hind WHERE (([id] = @Original_id) AND ((@IsNull_nimetus = 1 AND [nimetus] IS NULL) OR ([nimetus] = @Original_nimetus)) AND ((@IsNull_kogus = 1 AND [kogus] IS NULL) OR ([kogus] = @Original_kogus)) AND ((@IsNull_hind = 1 AND [hind] IS NULL) OR ([hind] = @Original_hind)));
-SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tooded] SET [nimetus] = @nimetus, [kogus] = @kogus, [hind] = @hind WHERE (([id] = @Original_id) AND ((@IsNull_nimetus = 1 AND [nimetus] IS NULL) OR ([nimetus] = @Original_nimetus)) AND ((@IsNull_kogus = 1 AND [kogus] IS NULL) OR ([kogus] = @Original_kogus)) AND ((@IsNull_hind = 1 AND [hind] IS NULL) OR ([hind] = @Original_hind)));
+SELECT id, nimetus, kogus, hind FROM tooded WHERE (id = @id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nimetus", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nimetus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kogus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kogus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@hind", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hind", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@hind", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "hind", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nimetus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nimetus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nimetus", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nimetus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_kogus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kogus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_kogus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kogus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_hind", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hind", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_hind", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hind", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_hind", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "hind", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -893,7 +893,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::AndmebaasAlex.Properties.Settings.Default.AndmebaasConnectionString1;
+            this._connection.ConnectionString = global::AndmebaasWin.Properties.Settings.Default.andmebaasConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -902,7 +902,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, nimetus, kogus, hind FROM dbo.Toode";
+            this._commandCollection[0].CommandText = "SELECT id, nimetus, kogus, hind FROM dbo.tooded";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -910,7 +910,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(AndmebaasDataSet.ToodeDataTable dataTable) {
+        public virtual int Fill(andmebaasDataSet.toodedDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -923,9 +923,9 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual AndmebaasDataSet.ToodeDataTable GetData() {
+        public virtual andmebaasDataSet.toodedDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            AndmebaasDataSet.ToodeDataTable dataTable = new AndmebaasDataSet.ToodeDataTable();
+            andmebaasDataSet.toodedDataTable dataTable = new andmebaasDataSet.toodedDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -933,15 +933,15 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AndmebaasDataSet.ToodeDataTable dataTable) {
+        public virtual int Update(andmebaasDataSet.toodedDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AndmebaasDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Toode");
+        public virtual int Update(andmebaasDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "tooded");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -963,7 +963,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id, string Original_nimetus, global::System.Nullable<int> Original_kogus, global::System.Nullable<double> Original_hind) {
+        public virtual int Delete(int Original_id, string Original_nimetus, global::System.Nullable<int> Original_kogus, global::System.Nullable<decimal> Original_hind) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
             if ((Original_nimetus == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -983,7 +983,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
             }
             if ((Original_hind.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((double)(Original_hind.Value));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((decimal)(Original_hind.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
@@ -1009,7 +1009,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string nimetus, global::System.Nullable<int> kogus, global::System.Nullable<double> hind) {
+        public virtual int Insert(string nimetus, global::System.Nullable<int> kogus, global::System.Nullable<decimal> hind) {
             if ((nimetus == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1023,7 +1023,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             if ((hind.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((double)(hind.Value));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(hind.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -1048,7 +1048,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string nimetus, global::System.Nullable<int> kogus, global::System.Nullable<double> hind, int Original_id, string Original_nimetus, global::System.Nullable<int> Original_kogus, global::System.Nullable<double> Original_hind, int id) {
+        public virtual int Update(string nimetus, global::System.Nullable<int> kogus, global::System.Nullable<decimal> hind, int Original_id, string Original_nimetus, global::System.Nullable<int> Original_kogus, global::System.Nullable<decimal> Original_hind, int id) {
             if ((nimetus == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1062,7 +1062,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             if ((hind.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((double)(hind.Value));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(hind.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -1086,7 +1086,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
             }
             if ((Original_hind.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((double)(Original_hind.Value));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(Original_hind.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
@@ -1113,7 +1113,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string nimetus, global::System.Nullable<int> kogus, global::System.Nullable<double> hind, int Original_id, string Original_nimetus, global::System.Nullable<int> Original_kogus, global::System.Nullable<double> Original_hind) {
+        public virtual int Update(string nimetus, global::System.Nullable<int> kogus, global::System.Nullable<decimal> hind, int Original_id, string Original_nimetus, global::System.Nullable<int> Original_kogus, global::System.Nullable<decimal> Original_hind) {
             return this.Update(nimetus, kogus, hind, Original_id, Original_nimetus, Original_kogus, Original_hind, Original_id);
         }
     }
@@ -1130,7 +1130,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         
         private UpdateOrderOption _updateOrder;
         
-        private ToodeTableAdapter _toodeTableAdapter;
+        private toodedTableAdapter _toodedTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1152,12 +1152,12 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public ToodeTableAdapter ToodeTableAdapter {
+        public toodedTableAdapter toodedTableAdapter {
             get {
-                return this._toodeTableAdapter;
+                return this._toodedTableAdapter;
             }
             set {
-                this._toodeTableAdapter = value;
+                this._toodedTableAdapter = value;
             }
         }
         
@@ -1180,9 +1180,9 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._toodeTableAdapter != null) 
-                            && (this._toodeTableAdapter.Connection != null))) {
-                    return this._toodeTableAdapter.Connection;
+                if (((this._toodedTableAdapter != null) 
+                            && (this._toodedTableAdapter.Connection != null))) {
+                    return this._toodedTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1197,7 +1197,7 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._toodeTableAdapter != null)) {
+                if ((this._toodedTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1209,14 +1209,14 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(AndmebaasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(andmebaasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._toodeTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Toode.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._toodedTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tooded.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._toodeTableAdapter.Update(updatedRows));
+                    result = (result + this._toodedTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1228,13 +1228,13 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(AndmebaasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(andmebaasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._toodeTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Toode.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._toodedTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tooded.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._toodeTableAdapter.Update(addedRows));
+                    result = (result + this._toodedTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1246,13 +1246,13 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(AndmebaasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(andmebaasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._toodeTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Toode.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._toodedTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tooded.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._toodeTableAdapter.Update(deletedRows));
+                    result = (result + this._toodedTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1288,15 +1288,15 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(AndmebaasDataSet dataSet) {
+        public virtual int UpdateAll(andmebaasDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._toodeTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._toodeTableAdapter.Connection) == false))) {
+            if (((this._toodedTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._toodedTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1332,13 +1332,13 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._toodeTableAdapter != null)) {
-                    revertConnections.Add(this._toodeTableAdapter, this._toodeTableAdapter.Connection);
-                    this._toodeTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._toodeTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._toodeTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._toodeTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._toodeTableAdapter.Adapter);
+                if ((this._toodedTableAdapter != null)) {
+                    revertConnections.Add(this._toodedTableAdapter, this._toodedTableAdapter.Connection);
+                    this._toodedTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._toodedTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._toodedTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._toodedTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._toodedTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1399,9 +1399,9 @@ SELECT id, nimetus, kogus, hind FROM Toode WHERE (id = @id)";
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._toodeTableAdapter != null)) {
-                    this._toodeTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._toodeTableAdapter]));
-                    this._toodeTableAdapter.Transaction = null;
+                if ((this._toodedTableAdapter != null)) {
+                    this._toodedTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._toodedTableAdapter]));
+                    this._toodedTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
